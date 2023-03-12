@@ -6,18 +6,27 @@ import { AiFillHeart } from 'react-icons/ai';
 
 function App() {
   return (
-    <div className='flex flex-col items-center max-w-[1440px] lg:max-w-full ' >
+    <div className='flex flex-col' >
       <nav className='fixed w-full flex items-center justify-center  z-10 backdrop-filter backdrop-blur-sm bg-opacity-5 border-b border-slate-500/10 p-5'>
         <div className='flex items-center gap-4'>
           <Headphones size="32" className='' />
-          <h1 className='font-bold text-transparent bg-clip-text  bg-gradient-to-r from-purple-400 to-pink-600'> lofi.smart </h1>
+          <h1 className='animate-pulse font-bold text-2xl'> lofi.smart </h1>
         </div>
       </nav>
       <header className='flex justify-center items-center  py-32 px-5 md:text-6xl'>
-        <h1 className='flex gap-3 font-bold text-5xl'>
-          <span>Relax.</span>
-          <span>Chill.</span>
-          <span>Code.</span>
+        <h1 className='flex gap-3 font-bold text-5xl opacity: 1; transform: none;'>
+          <span className='
+            animate-gradient-1 
+            bg-gradient-to-r 
+            from-purple-500
+            via-white
+            to-pink-500
+            bg-clip-text 
+            text-transparent 
+            text-5xl 
+            font-black'>
+            Relax. Chill. Code.
+          </span>
         </h1>
       </header>
       <main className='mx-auto'>

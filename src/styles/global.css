@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+:root{
+  font-family: 'Inter', sans-serif;
+  color-scheme: light dark;
+  background-color: #03001C;
+
+  -webkit-font-smoothing: antialiased;
+  color:white; 
+}
+body{
+  font-size: 1.6rem;
+}

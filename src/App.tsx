@@ -4,18 +4,20 @@ import { SiTailwindcss, SiNextdotjs, SiVercel, SiReact } from 'react-icons/si';
 import { AiFillHeart } from 'react-icons/ai';
 import { Card } from './components/Card';
 
-
 function App() {
   return (
     <div className='flex flex-col' >
-      <nav className='fixed w-full flex items-center justify-center  z-10 backdrop-filter backdrop-blur-sm bg-opacity-5 border-b border-slate-200/10 p-5'>
-        <div className='flex items-center gap-4'>
-          <Headphones size="32" className='' />
-          <h1 className='animate-pulse font-bold text-2xl'> lofi.smart </h1>
+      <nav className='fixed w-full flex items-center justify-center  z-10 backdrop-filter backdrop-blur-sm bg-opacity-5 border-b border-slate-200/10 py-6 px-6'>
+        <div className='w-full flex justify-between items-center gap-4'>
+          <div className='flex items-center gap-4'>
+            <Headphones size="32" className='' />
+            <h1 className='animate-pulse font-bold text-2xl'> lofi.smart </h1>
+          </div>
+          <img src="./assets/images/logo/fs-logo-white.svg" alt="Felipe Santana" width={30} height={30} className='bg-transparent '/>
         </div>
       </nav>
       <header className='flex justify-center items-center  py-32 px-5 md:text-6xl'>
-        <h1 className='flex gap-3 font-bold text-5xl opacity: 1; transform: none;'>
+        <h1 className='flex gap-3 font-bold opacity: 1; transform: none;'>
           <span className='
             animate-gradient-1 
             bg-gradient-to-r 
@@ -24,9 +26,10 @@ function App() {
             to-pink-500
             bg-clip-text 
             text-transparent 
-            text-5xl 
+            md:text-4xl
+            lg:text-5xl 
             font-black'>
-            Relax. Chill. Code.
+            Relax. Chill. & Code.
           </span>
         </h1>
       </header>
@@ -54,7 +57,7 @@ function App() {
         <div className='flex items-center justify-center gap-1'>
           <p>& </p>
           <AiFillHeart width={50} height={50} className='text-red-700' />
-          <p>by FS</p>
+          <p><img src="./assets/images/logo/fs-logo-white.svg" alt="Felipe Santana" width={12} height={12} className='bg-transparent'/></p>
         </div>
       </footer>
     </div>

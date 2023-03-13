@@ -8,9 +8,10 @@ interface CardProps{
 }
 export function Card({imageAlt,imageSrc,audioSrc}:CardProps){
 
-  const [runAudio, setRunAudio] = useState(true)
+  const [vol, setVol] = useState(0.3);
+  const [runAudio, setRunAudio] = useState(true);
   
-  const [play, { stop }] = useSound(audioSrc);
+  const [play, { stop }] = useSound(audioSrc, {volume: vol});
   function execAudio(){ 
     if (runAudio) {
       play(); 
@@ -24,9 +25,9 @@ export function Card({imageAlt,imageSrc,audioSrc}:CardProps){
   }
   
   return (
-    <div className="relative flex flex-col items-center justify-center hover:cursor-pointer hover:scale-110 transition-all rounded-lg" onClick={() => execAudio()}>
-      <img src={imageSrc} alt={imageAlt}/>
-      <input type="range" max="100" min="0" className="bottom-5 w-[60%] absolute border mx-auto"/>
+    <div className="relative flex flex-col items-center justify-center hover:cursor-pointer hover:scale-110 transition-all rounded-lg" >
+      <img src={imageSrc} alt={imageAlt} onClick={() => execAudio()}/>
+      <input type="range" max="1" min="0" value={vol} step="0.01" defaultValue={0.3} className="bottom-5 w-[60%] absolute border mx-auto" onChange={(e) => setVol(e.target.value)} />
     </div>
 
    

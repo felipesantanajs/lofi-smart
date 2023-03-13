@@ -35,12 +35,12 @@ function App() {
           <Card imageSrc='./assets/images/chill-cover.svg'  imageAlt='Chill Card Lofi' audioSrc="./assets/ambient-sounds/highway.mp3"/>
           <Card imageSrc='./assets/images/forest-cover.svg' imageAlt='Forest Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3" />
           <Card imageSrc='./assets/images/library-cover.svg' imageAlt='Library Card Lofi' audioSrc="./assets/ambient-sounds/campfire.mp3" />
-          <Card imageSrc='./assets/images/meditate-cover.svg' imageAlt='Meditate Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3" />
-          <Card imageSrc='./assets/images/ocean-cover.svg' imageAlt='Ocean Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
-          <Card imageSrc='./assets/images/rain-cover.svg' imageAlt='Rain Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
-          <Card imageSrc='./assets/images/night-cover.svg' imageAlt='Night Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
-          <Card imageSrc='./assets/images/study-cover.svg' imageAlt='Study Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
-          <Card imageSrc='./assets/images/urban-cover.svg' imageAlt='Urban Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
+          <Card imageSrc='./assets/images/meditate-cover.svg' imageAlt='Meditate Card Lofi' audioSrc="./assets/ambient-sounds/wind.mp3" />
+          <Card imageSrc='./assets/images/ocean-cover.svg' imageAlt='Ocean Card Lofi' audioSrc="./assets/ambient-sounds/rain.mp3"/>
+          <Card imageSrc='./assets/images/rain-cover.svg' imageAlt='Rain Card Lofi' audioSrc="./assets/ambient-sounds/rain.mp3"/>
+          <Card imageSrc='./assets/images/night-cover.svg' imageAlt='Night Card Lofi' audioSrc="./assets/ambient-sounds/crime-scene.mp3"/>
+          <Card imageSrc='./assets/images/study-cover.svg' imageAlt='Study Card Lofi' audioSrc="./assets/ambient-sounds/waves.mp3"/>
+          <Card imageSrc='./assets/images/urban-cover.svg' imageAlt='Urban Card Lofi' audioSrc="./assets/ambient-sounds/construction.mp3"/>
         </section>
       </main>
       <footer className='flex justify-center items-center text-sm gap-4 py-10'>

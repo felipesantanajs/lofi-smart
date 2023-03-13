@@ -8,7 +8,7 @@ interface CardProps{
 }
 export function Card({imageAlt,imageSrc,audioSrc}:CardProps){
 
-  const [vol, setVol] = useState(0.3);
+  const [vol, setVol] = useState<number>(0.3);
   const [runAudio, setRunAudio] = useState(true);
   
   const [play, { stop }] = useSound(audioSrc, {volume: vol});

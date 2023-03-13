@@ -1,4 +1,4 @@
-<img src=".github/preview.jpg" />
+![mockup 2](https://user-images.githubusercontent.com/100092279/224600013-205522c7-36eb-4938-9686-3727be7ffba3.png)
 
 ## Technology stack
 

@@ -2,12 +2,13 @@ import { Headphones } from 'phosphor-react'
 
 import { SiTailwindcss, SiNextdotjs, SiVercel, SiReact } from 'react-icons/si';
 import { AiFillHeart } from 'react-icons/ai';
+import { Card } from './components/Card';
 
 
 function App() {
   return (
     <div className='flex flex-col' >
-      <nav className='fixed w-full flex items-center justify-center  z-10 backdrop-filter backdrop-blur-sm bg-opacity-5 border-b border-slate-500/10 p-5'>
+      <nav className='fixed w-full flex items-center justify-center  z-10 backdrop-filter backdrop-blur-sm bg-opacity-5 border-b border-slate-200/10 p-5'>
         <div className='flex items-center gap-4'>
           <Headphones size="32" className='' />
           <h1 className='animate-pulse font-bold text-2xl'> lofi.smart </h1>
@@ -30,35 +31,16 @@ function App() {
         </h1>
       </header>
       <main className='mx-auto'>
-        <section className=' grid grid-cols-2 gap-20 place-content-center lg:grid-cols-3'>
-          <div>
-            <img src="./assets/images/chill-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/forest-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/library-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/meditate-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/night-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/ocean-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/rain-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/study-cover.svg" alt="lofi" />
-          </div>
-          <div>
-            <img src="./assets/images/urban-cover.svg" alt="lofi" />
-          </div>
-
+        <section className=' grid gap-20 place-content-center md:grid-cols-2 lg:grid-cols-3'>
+          <Card imageSrc='./assets/images/chill-cover.svg'  imageAlt='Chill Card Lofi' audioSrc="./assets/ambient-sounds/highway.mp3"/>
+          <Card imageSrc='./assets/images/forest-cover.svg' imageAlt='Forest Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3" />
+          <Card imageSrc='./assets/images/library-cover.svg' imageAlt='Library Card Lofi' audioSrc="./assets/ambient-sounds/campfire.mp3" />
+          <Card imageSrc='./assets/images/meditate-cover.svg' imageAlt='Meditate Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3" />
+          <Card imageSrc='./assets/images/ocean-cover.svg' imageAlt='Ocean Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
+          <Card imageSrc='./assets/images/rain-cover.svg' imageAlt='Rain Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
+          <Card imageSrc='./assets/images/night-cover.svg' imageAlt='Night Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
+          <Card imageSrc='./assets/images/study-cover.svg' imageAlt='Study Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
+          <Card imageSrc='./assets/images/urban-cover.svg' imageAlt='Urban Card Lofi' audioSrc="./assets/ambient-sounds/forest.mp3"/>
         </section>
       </main>
       <footer className='flex justify-center items-center text-sm gap-4 py-10'>

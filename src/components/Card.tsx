@@ -27,7 +27,7 @@ export function Card({imageAlt,imageSrc,audioSrc}:CardProps){
   return (
     <div className="relative flex flex-col items-center justify-center hover:cursor-pointer hover:scale-110 transition-all rounded-lg" >
       <img src={imageSrc} alt={imageAlt} onClick={() => execAudio()}/>
-      <input type="range" max="1" min="0" value={vol} step="0.01" defaultValue={0.3} className="bottom-5 w-[60%] absolute border mx-auto" onChange={(e) => setVol(e.target.value)} />
+      <input type="range" max="1" min="0" value={vol} step="0.01" defaultValue={0.3} className="bottom-5 w-[60%] absolute border mx-auto" onChange={(e) => setVol(Number(e.target.value))} />
     </div>
 
    
